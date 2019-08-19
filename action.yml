@@ -1,6 +1,9 @@
 name: 'Setup PostgreSQL'
 description: 'Setup a PostgreSQL database'
 author: 'Harmon'
+branding:
+  icon: 'database'
+  color: 'blue'
 inputs:
   # See https://hub.docker.com/_/postgres for supported versions
   # and further details on input environment variables
