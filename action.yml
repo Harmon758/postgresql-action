@@ -1,0 +1,25 @@
+name: 'Setup PostgreSQL'
+description: 'Setup a PostgreSQL database'
+author: 'Harmon'
+inputs:
+  # See https://hub.docker.com/_/postgres for supported versions
+  # and further details on input environment variables
+  postgresql version:
+    description: 'Version of PostgreSQL to use'
+    required: false
+    default: 'latest'
+  postgresql db:
+    description: 'POSTGRES_DB - name for the default database that is created'
+    required: false
+    default: ''
+  postgresql user:
+    description: 'POSTGRES_USER - create the specified user with superuser power'
+    required: false
+    default: ''
+  postgresql password:
+    description: 'POSTGRES_PASSWORD - superuser password'
+    required: false
+    default: ''
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
